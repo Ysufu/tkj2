@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap");
+
+:root {
+    --cy1-color: #ae00ff;
+    --cy2-color: #ff00b3;
+    --cy3-color: #ddd12c;
+    --cy4-color: #00ff15;
+    --cy5-color: #00c3ff;
+    --cy6-color: #00fff2;
+    --cy7-color: #ff0000;
+    --cy8-color: #88ff00;
+    --cy9-color: #fffb00;
+    --cy10-color: #ff00dd;
+}
+*,html{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Orbitron', sans-serif;
+    
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    height: 100vh;
+    background-image: url(1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    justify-content: center;
+    animation: change 20s infinite ease-in-out;
+}
+.login-box {
+    border-radius: 10px;
+    background: url(cy1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 45vh;
+    border: 3px solid rgb(247, 0, 255);
+    backdrop-filter: blur(15px);
+    animation: change-bg 20s infinite ease-in-out;
+}
+.logo{
+    width: 150px;
+}
+.text-box {
+    overflow: hidden;
+    margin: 10px;
+    width: 95%;
+    size: 20px;
+    padding: 10px;
+    background: transparent;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    color: #fff;
+    box-shadow: rgba(255, 255, 255, .2);
+    outline: none;
+}
+.text-box input{
+    border: none;
+    outline: none;
+}
+.text-box input::placeholder{
+    color: #fff;
+}
+.btn {
+    margin-bottom: 10px;
+    background-color: rgb(211, 67, 255);
+    outline: none;
+    border: none;
+    cursor: pointer;
+    width: 95%;
+    padding: 10px;
+    border-radius: 20px;
+}
+.btn:hover{
+    background-color: #00ff00;
+}
+.cek-ip {
+    border-radius: 10px;
+    background: transparent;
+    overflow: hidden;
+    border: 2px solid #fff;
+    width: 20vh;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+}
+p {
+    color: aqua;
+}
+a {
+    cursor: url('cursor.png'), auto;
+}
+h2 {
+    font-size: 15px;
+    color: #fff;
+    margin: 0;
+    animation: text-change 10s infinite linear;
+}
+.neonText {
+    animation: flicker 1.5s infinite alternate;
+    color: #00FF00;}
+    @keyframes flicker {
+    
+        0%, 18%, 22%, 25%, 53%, 57%, 100% {
+      
+            text-shadow:
+            0 0 4px #fff,
+            0 0 11px #ddd12c,
+            0 0 19px #fff,
+            0 0 40px rgb(206, 214, 90),
+            0 0 80px rgb(232, 248, 4),
+            0 0 90px rgb(38, 243, 250),
+            0 0 100px rgb(218, 97, 207),
+            0 0 150px rgb(212, 0, 255);
+        
+        }
+        
+        20%, 24%, 55% {        
+            text-shadow: none;
+        }    
+      }
+      @keyframes text-change {
+        0% {
+          color:  var(--cy5-color);
+        }
+        20% {
+          color:  var(--cy4-color);
+        }
+        40% {
+          color:  var(--cy6-color);
+        }
+        60% {
+           color: var(--cy5-color); 
+        }
+        80% {
+           color:  var(--cy6-color); 
+        }
+        100% {
+          color:  var(--cy7-color);
+        }
+      }  
+    @keyframes change-bg {
+        0% {
+            background-image: url(cy1.png);
+        }
+        25% {
+            background-image: url(cy2.png);
+        }
+        50% {
+            background-image: url(cy3.png);
+        }
+        75% {
+            background-image: url(cy4.png);
+        }
+        100% {
+            background-image: url(cy5.png);
+        }
+    }
